@@ -40,8 +40,7 @@ header{
     color: #ef5350;
     padding: 20px 0;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+
 }
 
 header nav {
@@ -49,10 +48,7 @@ header nav {
 
     list-style: none;
 
-/*  This did not work well, inline-block used instead */
-/*  display: grid;
-    grid-template-columns: auto 1fr 1fr;
-    align-items: end;*/
+
 }
 
 header nav li {
@@ -71,10 +67,9 @@ header button {
     text-transform: uppercase;
 }
 
-/* Main Section */
 
 .main {
-    grid-area: main;
+
 
     text-align: center;
 }
@@ -96,7 +91,7 @@ header button {
 /* Sidebar */
 
 .sidebar {
-    grid-area: sidebar;
+
 
     border: 1px solid #a2a2a2;
     padding: 20px;
@@ -105,7 +100,7 @@ header button {
 /* Footer */
 
 footer {
-    grid-area: footer;
+
 
     color: #ef5350;
     text-align: center;
@@ -119,7 +114,7 @@ footer p {
 }
 
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .container{
         /*  Redefine the grid into a single column layout. */
         grid-template-columns: 1fr;
@@ -129,4 +124,4 @@ footer p {
             "sidebar"
             "footer";
     }
-}
+} */
