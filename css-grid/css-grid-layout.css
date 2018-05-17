@@ -27,10 +27,12 @@ body {
     grid-template-rows: 1fr 2fr 2fr 1fr;
     grid-template-areas:
     "header header"
-    /* "aside aside" */
+    "aside aside"
     "main sidebar"
     "footer footer";
     grid-gap: 60px;
+    display: flex;
+    flex-direction: column;
 
 
 }
@@ -87,7 +89,7 @@ header nav li {
 
   grid-area: main;
     text-align: center;
-    
+
 }
 
 .main h2 {
@@ -195,10 +197,29 @@ aside{
       grid-template-rows: 1fr 3fr 1fr 1fr;
       grid-template-areas:
           "header"
-          /* "aside" */
           "main"
           "sidebar"
           "footer";
+display: flex;
+flex-direction: column;
+
+    }
+    #slides{
+        visibility: hidden;
+
+    }
+    #contslide{
+      visibility: hidden;
+    }
+  .main{
+  
+  }
+
+    .sidebar{
+      display: flex;
+      align-self: center;
+      align-items: center;
+      justify-content: center;
     }
 }
 /* @media screen and (max-width: 500px) {
